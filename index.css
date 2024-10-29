@@ -253,7 +253,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Nexa", sans-serif;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   overflow: hidden;
 }
 
@@ -689,7 +689,7 @@ input:focus-within {
     flex-direction: column;
   }
   .banner-3-container {
-    height: 25%;
+    height: 35%;
     position: static;
   }
   .root {
