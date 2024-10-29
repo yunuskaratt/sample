@@ -485,6 +485,9 @@ input:focus-within {
   height: 100%;
   position: relative;
   padding: calc(var(--resp) * 20px) calc(var(--resp) * 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-3-right {
@@ -496,6 +499,9 @@ input:focus-within {
   background-position: right;
   background-size: contain;
   padding: calc(var(--resp) * 20px) calc(var(--resp) * 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-3-left-bg {
@@ -580,9 +586,9 @@ input:focus-within {
   transition: all 300ms ease-in-out;
   padding: 8px;
 }
-.banner-social-icon img{
-    max-height: 70%;
-    width: auto ;
+.banner-social-icon img {
+  max-height: 70%;
+  width: auto;
 }
 .banner-social-icon:hover {
   transform: translateY(-5px);
@@ -599,6 +605,9 @@ input:focus-within {
 .banner-3-right-content {
   position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-3-right-content p {
@@ -609,11 +618,9 @@ input:focus-within {
   bottom: 0;
 }
 
-
 .banner-social-icon:hover {
   transform: translateY(-5px);
 }
-
 
 .banner-3-right-content {
   position: relative;
@@ -655,49 +662,49 @@ input:focus-within {
   background-color: #000;
 }
 
-.video-container video{
-    height: 100%;
-    width: 100%;
-    /* margin-top: -125px; */
-    object-fit: cover;
+.video-container video {
+  height: 100%;
+  width: 100%;
+  /* margin-top: -125px; */
+  object-fit: cover;
 }
-.audio-toggle-btn{
-    position: absolute;
-    top: 2vh;
-    right: 2vw;
-    z-index: 10;
-    height: 15px;
-    width: 15px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.audio-toggle-btn {
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  z-index: 10;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 992px){
-  .video-container video{
+@media (max-width: 992px) {
+  .video-container video {
     margin-top: 0;
-    
   }
-  .divide50{
-    display: block;
+  .divide50 {
+    flex-direction: column;
   }
-  .banner-3-container{
-    height: auto;
+  .banner-3-container {
+    height: 25%;
     position: static;
   }
-  .root{
+  .root {
     display: flex;
     flex-direction: column;
   }
-  .video-container{
+  .video-container {
     flex: 1;
   }
-  .outer-container{
+  .outer-container {
     padding: 0;
   }
-  .banner-3-left,.banner-3-right {
+  .banner-3-left,
+  .banner-3-right {
     height: fit-content;
+    padding: calc(var(--resp) * 10px) calc(var(--resp) * 20px);
   }
-
 }
