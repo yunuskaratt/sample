@@ -1,0 +1,675 @@
+:root {
+  --primary-color: #000;
+  --container-color: #d3c2ff;
+  /* --container-color-secondary: #FBDB86; */
+  --text-color: #5a5a5a;
+  --text-secondary: #999797;
+  --stroke-gray: #cecece;
+  --color-1: #a182f3;
+  --color-2: #fbdb86;
+  --color-3: #6bd2e0;
+  --green: hsl(68, 93%, 71%);
+  --gray: #eeeeee;
+}
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-Light.eot");
+  src: local("Nexa Light"), local("Nexa-Light"),
+    url("../fonts/Nexa-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-Light.woff2") format("woff2"),
+    url("../fonts/Nexa-Light.woff") format("woff"),
+    url("../fonts/Nexa-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-HeavyItalic.eot");
+  src: local("Nexa Heavy Italic"), local("Nexa-HeavyItalic"),
+    url("../fonts/Nexa-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-HeavyItalic.woff2") format("woff2"),
+    url("../fonts/Nexa-HeavyItalic.woff") format("woff"),
+    url("../fonts/Nexa-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-XBold.eot");
+  src: local("Nexa XBold"), local("Nexa-XBold"),
+    url("../fonts/Nexa-XBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-XBold.woff2") format("woff2"),
+    url("../fonts/Nexa-XBold.woff") format("woff"),
+    url("../fonts/Nexa-XBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-BlackItalic.eot");
+  src: local("Nexa Black Italic"), local("Nexa-BlackItalic"),
+    url("../fonts/Nexa-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-BlackItalic.woff2") format("woff2"),
+    url("../fonts/Nexa-BlackItalic.woff") format("woff"),
+    url("../fonts/Nexa-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-BookItalic.eot");
+  src: local("Nexa Book Italic"), local("Nexa-BookItalic"),
+    url("../fonts/Nexa-BookItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-BookItalic.woff2") format("woff2"),
+    url("../fonts/Nexa-BookItalic.woff") format("woff"),
+    url("../fonts/Nexa-BookItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-Bold.eot");
+  src: local("Nexa Bold"), local("Nexa-Bold"),
+    url("../fonts/Nexa-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-Bold.woff2") format("woff2"),
+    url("../fonts/Nexa-Bold.woff") format("woff"),
+    url("../fonts/Nexa-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-BoldItalic.eot");
+  src: local("Nexa Bold Italic"), local("Nexa-BoldItalic"),
+    url("../fonts/Nexa-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Nexa-BoldItalic.woff") format("woff"),
+    url("../fonts/Nexa-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-Italic.eot");
+  src: local("Nexa Italic"), local("Nexa-Italic"),
+    url("../fonts/Nexa-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-Italic.woff2") format("woff2"),
+    url("../fonts/Nexa-Italic.woff") format("woff"),
+    url("../fonts/Nexa-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-Regular.eot");
+  src: local("Nexa Regular"), local("Nexa-Regular"),
+    url("../fonts/Nexa-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-Regular.woff2") format("woff2"),
+    url("../fonts/Nexa-Regular.woff") format("woff"),
+    url("../fonts/Nexa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-Black.eot");
+  src: local("Nexa Black"), local("Nexa-Black"),
+    url("../fonts/Nexa-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-Black.woff2") format("woff2"),
+    url("../fonts/Nexa-Black.woff") format("woff"),
+    url("../fonts/Nexa-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-XBoldItalic.eot");
+  src: local("Nexa XBold Italic"), local("Nexa-XBoldItalic"),
+    url("../fonts/Nexa-XBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-XBoldItalic.woff2") format("woff2"),
+    url("../fonts/Nexa-XBoldItalic.woff") format("woff"),
+    url("../fonts/Nexa-XBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-Book.eot");
+  src: local("Nexa Book"), local("Nexa-Book"),
+    url("../fonts/Nexa-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-Book.woff2") format("woff2"),
+    url("../fonts/Nexa-Book.woff") format("woff"),
+    url("../fonts/Nexa-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-LightItalic.eot");
+  src: local("Nexa Light Italic"), local("Nexa-LightItalic"),
+    url("../fonts/Nexa-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-LightItalic.woff2") format("woff2"),
+    url("../fonts/Nexa-LightItalic.woff") format("woff"),
+    url("../fonts/Nexa-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-Heavy.eot");
+  src: local("Nexa Heavy"), local("Nexa-Heavy"),
+    url("../fonts/Nexa-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nexa-Heavy.woff2") format("woff2"),
+    url("../fonts/Nexa-Heavy.woff") format("woff"),
+    url("../fonts/Nexa-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --resp: 1;
+  --fresp: 1;
+}
+
+@media (min-width: 2200px) {
+  :root {
+    --resp: 1.3;
+    --fresp: 1.3;
+  }
+}
+
+@media (min-width: 3000px) {
+  :root {
+    --resp: 2;
+    --fresp: 2;
+  }
+}
+
+@media (max-width: 1800px) {
+  :root {
+    --resp: 0.95;
+    --fresp: 0.95;
+  }
+}
+
+@media (max-width: 1400px) {
+  :root {
+    --resp: 0.85;
+    --fresp: 0.85;
+  }
+}
+
+@media (max-width: 1300px) {
+  :root {
+    --resp: 0.8;
+    --fresp: 0.8;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --resp: 0.7;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --fresp: 0.7;
+  }
+}
+
+@media (max-width: 572px) {
+  :root {
+    --fresp: 0.6;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+  /* overflow-x: auto; */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Nexa", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img,
+svg,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus,
+input:focus-visible,
+input:focus-within {
+  box-shadow: none;
+  outline: none;
+}
+
+/* font size */
+.fs10 {
+  font-size: calc(var(--fresp) * 10px) !important;
+  line-height: calc(var(--fresp) * 12px) !important;
+}
+
+.fs12 {
+  font-size: calc(var(--fresp) * 14px) !important;
+}
+
+.fs14 {
+  font-size: calc(var(--fresp) * 16px) !important;
+}
+
+.fs15 {
+  font-size: calc(var(--fresp) * 15px) !important;
+  line-height: calc(var(--fresp) * 20px) !important;
+}
+
+.fs16 {
+  font-size: calc(var(--fresp) * 16px) !important;
+  line-height: calc(var(--fresp) * 19px) !important;
+}
+
+.fs18 {
+  font-size: calc(var(--fresp) * 18px) !important;
+  line-height: calc(var(--fresp) * 21px) !important;
+}
+
+.fs20 {
+  font-size: calc(var(--fresp) * 20px) !important;
+  line-height: calc(var(--fresp) * 24px) !important;
+}
+
+.fs22 {
+  font-size: calc(var(--fresp) * 22px) !important;
+  line-height: calc(var(--fresp) * 26px) !important;
+}
+
+.fs24 {
+  font-size: calc(var(--fresp) * 24px) !important;
+  line-height: calc(var(--fresp) * 20px) !important;
+}
+.fs28 {
+  font-size: calc(var(--fresp) * 28px) !important;
+}
+
+.fs32 {
+  font-size: calc(var(--fresp) * 32px) !important;
+  line-height: calc(var(--fresp) * 32px) !important;
+}
+
+.fs36 {
+  font-size: calc(var(--fresp) * 36px) !important;
+  line-height: calc(var(--fresp) * 36px) !important;
+}
+
+.fs42 {
+  font-size: calc(var(--fresp) * 42px) !important;
+  line-height: calc(var(--fresp) * 42px) !important;
+}
+
+.fs56 {
+  font-size: calc(var(--fresp) * 56px);
+  line-height: calc(var(--fresp) * 56px);
+}
+
+.fs66 {
+  font-size: calc(var(--fresp) * 60px);
+  line-height: calc(var(--fresp) * 79px);
+}
+
+/* font weight */
+.fw300 {
+  font-weight: 300 !important;
+}
+
+.fw400 {
+  font-weight: 400 !important;
+}
+
+.fw500 {
+  font-weight: 500 !important;
+}
+
+.fw600 {
+  font-weight: 600 !important;
+}
+
+.fw700 {
+  font-weight: 700 !important;
+}
+
+.fw800 {
+  font-weight: 800 !important;
+}
+
+.fw900 {
+  font-weight: 900 !important;
+}
+
+.text-gray {
+  color: var(--text-color);
+}
+
+.text-secondary-gray {
+  color: var(--text-secondary);
+}
+
+.text-black {
+  color: var(--primary-color);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-color-2 {
+  color: var(--color-2);
+}
+
+.text-eee {
+  color: var(--gray);
+}
+
+.m-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-btn-primary {
+  background-color: #000;
+  position: relative;
+  color: #eee;
+  height: calc(var(--resp) * 58px);
+  padding: calc(var(--resp) * 15px) calc(var(--resp) * 40px);
+  border: 2px solid var(--primary-color) !important;
+  transition: all ease 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.m-btn-primary:hover {
+  background: transparent;
+  color: var(--primary-color);
+}
+.m-btn-white img,
+.m-btn-primary img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+.outer-container {
+  padding: 0 calc(var(--resp) * 4vw);
+}
+
+.divide50 {
+  display: flex;
+}
+
+.divide50 > div {
+  flex: 1;
+}
+
+.banner-3-container {
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  bottom: 2vh;
+  overflow: hidden;
+}
+
+.banner-3-left {
+  background-color: rgba(211, 194, 255, 1);
+  /* backdrop-filter: blur(1px); */
+  height: 100%;
+  position: relative;
+  padding: calc(var(--resp) * 20px) calc(var(--resp) * 40px);
+}
+
+.banner-3-right {
+  background-color: rgba(0, 0, 0, 1);
+  /* backdrop-filter: blur(1px); */
+  height: 100%;
+  background-image: url("../images/vector/banner-3-right-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding: calc(var(--resp) * 20px) calc(var(--resp) * 40px);
+}
+
+.banner-3-left-bg {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  transform: rotate(180deg);
+  height: 100%;
+}
+
+.banner-3-left-bg img,
+.banner-3-right-bg img {
+  height: 60%;
+  width: auto;
+}
+
+.banner-3-right-bg {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  height: 100%;
+}
+
+.banner-3-left-content {
+  text-align: center;
+  position: relative;
+}
+
+.banner-3-left-content p {
+  font-style: italic;
+  margin-bottom: 1vh;
+  position: relative;
+}
+
+.dobule-colun {
+  position: absolute;
+  height: calc(var(--resp) * 16px);
+}
+
+.dobule-colun.left {
+  top: calc(var(--resp) * -15px);
+  left: calc(var(--resp) * -15px);
+}
+
+.dobule-colun.right {
+  bottom: 0;
+  right: calc(var(--resp) * 70px);
+}
+
+.banner-3-left-profile-1 {
+  position: absolute;
+  bottom: 25%;
+  left: calc(var(--resp) * 10%);
+}
+
+.banner-3-left-profile-2 {
+  position: absolute;
+  bottom: calc(var(--resp) * 5%);
+  right: 55%;
+}
+
+.banner-3-left-profile-3 {
+  position: absolute;
+  bottom: calc(var(--resp) * 5%);
+  left: 55%;
+}
+
+.banner-3-left-profile-4 {
+  position: absolute;
+  bottom: 25%;
+  right: calc(var(--resp) * 10%);
+}
+
+.banner-3-left-profile img {
+  height: calc(var(--resp) * 124px);
+  width: calc(var(--resp) * 94px);
+}
+
+.banner-social-icon {
+  height: calc(var(--resp) * 45px);
+  width: calc(var(--resp) * 45px);
+  transition: all 300ms ease-in-out;
+  padding: 8px;
+}
+.banner-social-icon img{
+    max-height: 70%;
+    width: auto ;
+}
+.banner-social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.banner-3-social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 2vh;
+}
+
+.banner-3-right-content {
+  position: relative;
+  height: 100%;
+}
+
+.banner-3-right-content p {
+  font-style: italic;
+  color: var(--color-2);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+.banner-social-icon:hover {
+  transform: translateY(-5px);
+}
+
+
+.banner-3-right-content {
+  position: relative;
+  height: 100%;
+}
+
+.banner-3-right-content p {
+  font-style: italic;
+  color: var(--color-2);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.icon-container-1 {
+  background-color: #d3c2ff;
+}
+
+.icon-container-2 {
+  background-color: #fbdb86;
+}
+
+.icon-container-3 {
+  background-color: #dcb7bc;
+}
+
+.icon-container-6 {
+  background-color: #eeeeee;
+}
+
+.icon-container-4 {
+  background-color: #93f2ff;
+}
+
+.icon-container-5 {
+  background-color: #cecece;
+}
+
+.roadmap-button.roadmap-active {
+  background-color: #000;
+}
+
+.video-container video{
+    height: 100%;
+    width: auto;
+    object-fit: fill;
+    margin-top: -125px;
+}
+.audio-toggle-btn{
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    z-index: 10;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
