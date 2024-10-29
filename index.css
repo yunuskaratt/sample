@@ -696,7 +696,7 @@ input:focus-within {
   .outer-container{
     padding: 0;
   }
-  .banner-3-left{
+  .banner-3-left,.banner-3-right {
     height: fit-content;
   }
 
