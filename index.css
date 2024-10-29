@@ -657,9 +657,9 @@ input:focus-within {
 
 .video-container video{
     height: 100%;
-    width: auto;
-    object-fit: fill;
-    margin-top: -125px;
+    width: 100%;
+    /* margin-top: -125px; */
+    object-fit: cover;
 }
 .audio-toggle-btn{
     position: absolute;
@@ -672,4 +672,32 @@ input:focus-within {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 992px){
+  .video-container video{
+    margin-top: 0;
+    
+  }
+  .divide50{
+    display: block;
+  }
+  .banner-3-container{
+    height: auto;
+    position: static;
+  }
+  .root{
+    display: flex;
+    flex-direction: column;
+  }
+  .video-container{
+    flex: 1;
+  }
+  .outer-container{
+    padding: 0;
+  }
+  .banner-3-left{
+    height: fit-content;
+  }
+
 }
